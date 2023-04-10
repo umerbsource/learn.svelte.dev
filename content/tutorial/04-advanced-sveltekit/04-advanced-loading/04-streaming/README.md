@@ -30,7 +30,7 @@ export function load({ params }) {
 
 > If `comments` is a top-level property of the returned object, SvelteKit will automatically await it. For that reason, we must nest it inside an object. Here, we've called that object `promises`, but the name is not important.
 
-Inside `src/routes/blog/[slug]/+page.svelte` we can now use an [`{#await ...}](await-blocks) block to render placeholder UI while the data loads:
+Inside `src/routes/blog/[slug]/+page.svelte` we can now use an [`{#await ...}`](await-blocks) block to render placeholder UI while the data loads:
 
 ```svelte
 /// file: src/routes/blog/[slug]/+page.svelte
